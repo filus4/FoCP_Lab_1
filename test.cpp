@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <array>
 
 int main() {
 
@@ -50,7 +51,7 @@ int main() {
 
     std::cin >> times;
 
-    for(int i = 0; i < times; i+= 5) {
+    for (int i = 0; i < times; i+= 5) {
         std::cout << "I will n OMEGALUL t talk in class" << std::endl; 
     }
 */
@@ -64,7 +65,7 @@ int main() {
 
     std::cin >> total_money;
 
-    while(total_money >= 50) {
+    while (total_money >= 50) {
         total_money = total_money - 50;
         banknotes += 1;
     }
@@ -78,7 +79,17 @@ int main() {
     }
 */
 
-    
+/*
+    std::array <int, 5 > data;
+
+    for (int i = 0; i < 5; i++) {
+        data[i] = i;
+    }
+
+    for (int i = 0; i < 5; i++) {
+        std::cout << data[i] << std::endl;
+    }
+*/
 
     return 0;
 }
