@@ -1,7 +1,22 @@
 #include <iostream>
 
-int main(){
-    
+int main() {
+
+/*
+    int my_number;
+
+    std::cout << "Please introduce a number:" << std::endl;
+
+    std::cin >> my_number;
+
+    if (my_number % 2 == 0) {
+        std::cout << "This number is even" << std::endl;
+    } else {
+        std:: cout << "This number is odd" << std::endl;
+    }
+*/
+
+/*  
     // ax + b = c
     // ax = c - b
     // x = (c - b) / a
@@ -25,20 +40,18 @@ int main(){
     float x = (c - b) / a;
 
     std::cout << "The value of x is: " << x << std::endl;
-
-/*
-    int my_number;
-
-    std::cout << "Please introduce a number:" << std::endl;
-
-    std::cin >> my_number;
-
-    if (my_number % 2 == 0){
-        std::cout << "This number is even" << std::endl;
-    } else {
-        std:: cout << "This number is odd" << std::endl;
-    }
 */
+
+    int times;
     
+    std::cout << "Please introduce a number of times you want to repeat the sentence:";
+
+    std::cin >> times;
+
+    for(int i = 0; i < times; i+= 5) {
+        std::cout << "I will n OMEGALUL t talk in class" << std::endl; 
+    }
+
+
     return 0;
 }
