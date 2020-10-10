@@ -42,6 +42,7 @@ int main() {
     std::cout << "The value of x is: " << x << std::endl;
 */
 
+/*
     int times;
     
     std::cout << "Please introduce a number of times you want to repeat the sentence:";
@@ -51,7 +52,24 @@ int main() {
     for(int i = 0; i < times; i+= 5) {
         std::cout << "I will n OMEGALUL t talk in class" << std::endl; 
     }
+*/
 
+/*
+
+    int total_money;
+    int banknotes = 0;
+    
+    std::cout << "Please introduce an amount of money:";
+
+    std::cin >> total_money;
+
+    while(total_money >= 50) {
+        total_money = total_money - 50;
+        banknotes += 1;
+    }
+
+    std::cout << "Number of banknotes: " << banknotes << std::endl;
+*/
 
     return 0;
 }
