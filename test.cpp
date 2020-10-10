@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cmath>
 #include <array>
+#include <cstdlib>
 
 int main() {
 
@@ -90,6 +91,18 @@ int main() {
         std::cout << data[i] << std::endl;
     }
 */
+    
+    std::array <int, 10 > numbers = {1,2,5,6,9,93,60,-21,423,-356};
 
+    int smallest = numbers[0];
+
+    for (int i = 0; i < 10; i++) {
+        if (numbers[i] < smallest) {
+               smallest = numbers[i];
+        }
+    }
+
+    std::cout << "The smallest number in the array is: " << smallest << std::endl;
+    
     return 0;
 }
