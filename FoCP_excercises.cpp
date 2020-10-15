@@ -2,7 +2,8 @@
 #include <cmath>
 
 int main() {
-/*
+// Function for calculating system of linear equations using cramer method
+
     float a1;
     float b1;
     float c1;
@@ -30,13 +31,24 @@ int main() {
     std::cout << "Please introduce a value for c2: ";
     std::cin >> c2;
 
-    float y = (c2 - a2 * ((c1 - b1) / a1)) / b2;
+    float d= (a1 * b2) - (a2 * b1);
+    float x = ((c1 * b2) - (c2 * b1)) / d;
+    float y = ((a1 * c2) - (a2 * c1)) / d;
 
-    float x = (c1 - (b1 * y)) / a1;
+    if (d != 0) {
+        std::cout << "X = " << x << std::endl;
+        std::cout << "Y = " << y << std::endl;
+    } else if ((d == 0) && ((x != 0) || (y != 0))) {
+        std::cout << "The system has no solutions." << std::endl;
+    }   else if ((d == 0) && (x == 0) || (y == 0)) {
+        std::cout << "The system has an infinite number of solutions." << std::endl;
+    }
 
-    std::cout << "X = " << x << std::endl;
-    std::cout << "Y = " << y << std::endl;
-*/
+    return 0;
+
+// Function for calculating quadratic equation
+
+/*
     float a;
     float b;
     float c;
@@ -75,8 +87,7 @@ int main() {
             std::cout << "Can't process this equation any further." << std::endl;
         }
     }
+*/
 
-    
 
-    return 0;
 }
